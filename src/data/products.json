@@ -1,0 +1,16 @@
+[
+  {
+    "picture": "@/public/products/p1.png",
+    "name": "Noise Icon 4 With Stunning Strap",
+    "details": "Pink Strap, Regular",
+    "price": "1000",
+    "currency": "$"
+  },
+  {
+    "picture": "@/public/products/p2.png",
+    "name": "Iconnect By Timex iconnect calling lite smart watch",
+    "details": "Pink Strap, Free size",
+    "price": "1500",
+    "currency": "$"
+  }
+]
