@@ -11,7 +11,7 @@ export function TopBar({ productsInCart }) {
           </p>
         </div>
       </div>
-      <CartIcon className="file: mt-4 h-10 w-10 right-3 float-right mr-5"/>
+      <CartIcon className="file: mt-4 h-10 w-10 right-3 float-right mr-5" />
     </div>
   );
 }

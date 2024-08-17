@@ -1,3 +1,3 @@
 export function updateLocalStorage(productsInCart) {
-    localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
+  localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
 }
