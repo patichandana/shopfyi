@@ -1,7 +1,7 @@
 // import * as productsData from "@/src/data/products.json";
 import productsData from "../data/products.json";
 import { Product, ShowProductUpdates } from "../views/product";
-import { ToastProvider } from "./hooks/contexts";
+import { ToastProvider } from "./hooks/product-toast";
 import "../index.css";
 
 export function ProductList({ productsInCart, setProductsInCart }) {

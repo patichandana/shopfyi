@@ -1,7 +1,7 @@
 import p1 from "../images/p1.jpeg";
 import { updateLocalStorage } from "./utils";
 import { CartIcon, CrossIcon } from "./icons";
-import { useToast } from "./hooks/contexts";
+import { useToast } from "./hooks/product-toast";
 
 export function ShowProductUpdates() {
   const { toastDisplay, toast } = useToast();
@@ -39,20 +39,19 @@ function handleAddToCart(productId, productsInCart, setProductsInCart, toast) {
 
     setProductsInCart({ ...productsInCart });
     toast({
-        alert: "alert-success",
-        display: "visible",
-        message: "item added to cart",
-        clearAfter: 3000
-      });
+      alert: "alert-success",
+      display: "visible",
+      message: "item added to cart",
+      clearAfter: 3000,
+    });
     setTimeout(updateLocalStorage(productsInCart), 0);
-    throw new Error("some");
     return true;
   } catch (err) {
     toast({
       alert: "alert-error",
       display: "visible",
       message: "failed adding item to cart",
-      clearAfter: 3000
+      clearAfter: 3000,
     });
     return false;
   }
@@ -80,7 +79,12 @@ export function Product({ product, productsInCart, setProductsInCart }) {
             href="#"
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             onClick={() => {
-              handleAddToCart(product.id, productsInCart, setProductsInCart, toast);
+              handleAddToCart(
+                product.id,
+                productsInCart,
+                setProductsInCart,
+                toast
+              );
             }}
           >
             Add to cart
