@@ -58,16 +58,16 @@ function handleAddToCart(productId, productsInCart, setProductsInCart, toast) {
 }
 
 export function Product({ product, productsInCart, setProductsInCart }) {
-  const { toastDisplay, toast } = useToast();
+  const { toast } = useToast();
 
   return (
     <>
       <div className="max-w-sm min-w-20 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-left m-8">
-        <a href="#">
-          <img className="rounded-t-lg" src={p1} alt="image" />
+        <a href="/product">
+          <img className="rounded-t-lg" src={p1} alt="product-image" />
         </a>
         <div className="p-5">
-          <a href="#">
+          <a href="/product">
             <h6 className="mb-2 text-l tracking-tight text-gray-900 dark:text-white">
               {product.name}
             </h6>

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 // import { ProductList } from '@/src/views/productList';
 import { ProductList } from './views/productList';
 import { TopBar } from './views/topBar';

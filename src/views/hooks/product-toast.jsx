@@ -1,4 +1,3 @@
-import { clear } from "@testing-library/user-event/dist/clear";
 import { createContext, useContext, useState } from "react";
 
 const ProductToastDisplayContext = createContext({
@@ -26,7 +25,7 @@ export function ToastProvider({ children }) {
 
     setToastDisplay(toastObj);
 
-    if (display != "hidden" && clearAfter != null) {
+    if (display !== "hidden" && clearAfter != null) {
       setTimeout(() => setToastDisplay({ display: "hidden" }), clearAfter);
     }
   };
