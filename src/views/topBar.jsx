@@ -1,7 +1,7 @@
 import { CartIcon } from "./icons";
 // import { useNavigate } from "react-router-dom";
 // import { Navigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export function TopBar({ productsInCart }) {
   const totalProductsCount = productsInCart.totalProductsCount;
