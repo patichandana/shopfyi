@@ -35,7 +35,7 @@ export function ProductSummary({ product }) {
   );
 }
 
-function ProductQuantity({ quantity, onQuantityChange, min = 1, max = 999 }) {
+function ProductQuantity({ quantity=1, onQuantityChange, min = 1, max = 999 }) {
   const handleInputChange = (event) => {
     const updatedQ = event.target.value;
     if (
